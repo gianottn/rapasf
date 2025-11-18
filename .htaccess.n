@@ -1,0 +1,6 @@
+SSLRequireSSL
+AuthType Basic
+AuthBasicProvider file
+AuthName "File basierte Authentisierung"
+AuthUserFile /nas/gianottn/private/.htpasswd
+require valid-user 
