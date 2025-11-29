@@ -51,6 +51,23 @@
             font-size: 0.9rem;
             color: #555;
         }
+        /* Auth UI */
+        #g_id_signin {
+            margin: 20px auto;
+        }
+        #user-info {
+            margin-top: 20px;
+        }
+        #signout-btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 8px 14px;
+            background: #d9534f;
+            color: #fff;
+            border-radius: 4px;
+            text-decoration: none;
+            cursor: pointer;
+        }
     </style>
 </head>
 
@@ -64,7 +81,6 @@
     <!-- Link to the F1 Page -->
     <a class="btn" href="./2024_1/main2024_1.html">2024-1</a><br><br>
 	<a class="btn" href="./2024_2/main2024_2.html">2024-2</a><br><br>
-	<!-- <a class="btn" href="./2025/main2025.html">2025</a><br><br> -->
 
 
 
@@ -73,6 +89,17 @@
 
     </footer>
 
+    <!-- Google Sign-in button -->
+    <div id="g_id_signin"></div>
+    <div id="user-info" aria-live="polite"></div>
+
+    <!-- Sign-out link (hidden until signed in) -->
+    <a id="signout-btn" href="#" style="display:none;">Sign out</a>
+
 </body>
+
+    <!-- Google Identity Services script -->
+    <script src="https://accounts.google.com/gsi/client" async defer></script>
+    <script src="./auth.js"></script>
 
 </html>
